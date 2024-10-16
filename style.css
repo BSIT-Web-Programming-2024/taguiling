@@ -14,6 +14,7 @@
 
   html{
     height: 100vh;
+    width: 100%;
   }
 
   
@@ -24,12 +25,12 @@
 
 .header{
     position: fixed;
-    top: 0;
+    top: -0.5em;
     left: 0;
     width: 100%;
     padding: 35px 12%;
-    background: rgba(0, 0, 0, 0.8); 
-    backdrop-filter: blur(10px);
+    background:black; 
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,6 +64,71 @@ span{
     color: orangered;
     border-bottom: 3px solid orangered;
 }
+
+
+#services{
+    background-color: var(--background);
+   
+}
+.header{
+    text-align: center;
+    font-size: 5em;
+    margin: 0.5em 0;
+}
+
+.main-container{
+    background-color:rgb(15, 15, 15);
+    height: 100vh;
+    width: 100%;
+    padding-top: 10.5em;
+}
+
+.sub-heading {
+   
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+
+}
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    gap: 2em;
+    margin: 4em;
+    justify-items: auto;
+   
+}
+.box{
+    border: 3px solid rgb(49,49,49);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 3em;
+    gap: 2em;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.box:hover{
+    border: 3px solid rgb(100, 100, 100);
+}
+.box p{
+    opacity: 0.8;
+}
+.box h1{
+    font-size: 2em;
+}
+.box img{
+    min-width: 25px;
+    border-radius: 0.5em ;
+}
+
+
+
 .contact{
     padding: 10px 28px;
     background-color: white;
@@ -79,6 +145,13 @@ span{
     box-shadow: 0 0 25px orangered;
     color: white;
 }
+
+.contact-container{
+
+height: 50vh;
+width: 100%;
+}
+
 .home{
     width: 100%;
     min-height: 100vh;
@@ -90,6 +163,7 @@ span{
 }
 .home-content{
     max-width: 800px;
+    padding-top: 2em;
 }
 .home-content h3{
     font-size: 42px;
@@ -143,7 +217,7 @@ span{
 .home .img-box img{
     border: 3em;
     border-radius: 50%;
-    width: 550px;
+    width: 450px;
 }
 
 ::-webkit-scrollbar{
@@ -158,12 +232,15 @@ span{
 }
 
 .about{
+    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 12% 8%;
     gap: 10em;
     background: black;
+    
 }
 .about-img img{
     position: relative;
@@ -198,6 +275,7 @@ form{
     align-items: center;
     justify-content: center;
     gap: 2em;
+    padding-top: 5em;
 }
 form .input-box{
     display: flex;
